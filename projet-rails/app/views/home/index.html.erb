@@ -1,4 +1,15 @@
-<h1>
-  Ceci est la page d'accueil du projet
-  <%= Rails.application.class.parent_name %>
-</h1>
+<%= image_tag("home.jpg", :alt => "home", :class => "image-home") %>
+
+<div id="fixed-home">
+  <div class="home">
+    <h1 class="h1-home">Réparation de smartphones</h1>
+    <div class="menu-home">
+      <div class="item-home">
+        <a href="/utilisateurs/new">Passer mon annonce</a>
+      </div>
+      <div class="item-home">
+        <a href="/">Voir les annonces</a>
+      </div>
+    </div>
+  </div>
+</div>
