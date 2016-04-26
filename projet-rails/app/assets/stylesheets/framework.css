@@ -1,0 +1,20 @@
+@font-face {
+font-family: 'robotoBold';
+src: url('Roboto-Regular.ttf');
+}
+@font-face {
+font-family: 'robotoLight';
+src: url('Roboto-Light.ttf');
+}
+
+.regular{
+  font-family: robotoLight;
+}
+
+.bold{
+  font-family: robotoBold;
+}
+
+.center{
+  text-align: center;
+}

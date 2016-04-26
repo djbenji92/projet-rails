@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :annonceurs
+  resources :annonceurs
+  resources :annonceurs
   resources :utilisateurs, :annonceur
   root 'home#index'
   resources :utilisateurs, :annonceur

@@ -1,12 +1,3 @@
-@font-face {
-font-family: 'robotoBold';
-src: url('Roboto-Regular.ttf');
-}
-@font-face {
-font-family: 'robotoLight';
-src: url('Roboto-Light.ttf');
-}
-
 .image-home{
   position: fixed;
   margin-top: -50px;

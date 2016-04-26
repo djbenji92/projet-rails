@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @annonceur.email %>
+</p>
+
+<p>
+  <strong>Nom:</strong>
+  <%= @annonceur.nom %>
+</p>
+
+<p>
+  <strong>Prenom:</strong>
+  <%= @annonceur.prenom %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @annonceur.password %>
+</p>
+
+<p>
+  <strong>Cp:</strong>
+  <%= @annonceur.cp %>
+</p>
+
+<p>
+  <strong>Adresse:</strong>
+  <%= @annonceur.adresse %>
+</p>
+
+<p>
+  <strong>Telephone:</strong>
+  <%= @annonceur.telephone %>
+</p>
+
+<p>
+  <strong>Situation:</strong>
+  <%= @annonceur.situation %>
+</p>
+
+<p>
+  <strong>Rayonintervention:</strong>
+  <%= @annonceur.rayonIntervention %>
+</p>
+
+<%= link_to 'Edit', edit_annonceur_path(@annonceur) %> |
+<%= link_to 'Back', annonceurs_path %>

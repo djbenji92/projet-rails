@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Annonceurs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Email</th>
+      <th>Nom</th>
+      <th>Prenom</th>
+      <th>Password</th>
+      <th>Cp</th>
+      <th>Adresse</th>
+      <th>Telephone</th>
+      <th>Situation</th>
+      <th>Rayonintervention</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @annonceurs.each do |annonceur| %>
+      <tr>
+        <td><%= annonceur.email %></td>
+        <td><%= annonceur.nom %></td>
+        <td><%= annonceur.prenom %></td>
+        <td><%= annonceur.password %></td>
+        <td><%= annonceur.cp %></td>
+        <td><%= annonceur.adresse %></td>
+        <td><%= annonceur.telephone %></td>
+        <td><%= annonceur.situation %></td>
+        <td><%= annonceur.rayonIntervention %></td>
+        <td><%= link_to 'Show', annonceur %></td>
+        <td><%= link_to 'Edit', edit_annonceur_path(annonceur) %></td>
+        <td><%= link_to 'Destroy', annonceur, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Annonceur', new_annonceur_path %>

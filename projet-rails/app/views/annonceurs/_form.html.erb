@@ -1,0 +1,53 @@
+<%= form_for(@annonceur) do |f| %>
+  <% if @annonceur.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@annonceur.errors.count, "error") %> prohibited this annonceur from being saved:</h2>
+
+      <ul>
+      <% @annonceur.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :nom %><br>
+    <%= f.text_field :nom %>
+  </div>
+  <div class="field">
+    <%= f.label :prenom %><br>
+    <%= f.text_field :prenom %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br>
+    <%= f.text_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :cp %><br>
+    <%= f.text_field :cp %>
+  </div>
+  <div class="field">
+    <%= f.label :adresse %><br>
+    <%= f.text_field :adresse %>
+  </div>
+  <div class="field">
+    <%= f.label :telephone %><br>
+    <%= f.text_field :telephone %>
+  </div>
+  <div class="field">
+    <%= f.label :situation %><br>
+    <%= f.text_field :situation %>
+  </div>
+  <div class="field">
+    <%= f.label :rayonIntervention %><br>
+    <%= f.text_field :rayonIntervention %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
